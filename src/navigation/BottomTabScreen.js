@@ -7,15 +7,15 @@ import IoniconsX from "react-native-vector-icons/Ionicons";
 import { createStackNavigator } from "@react-navigation/stack";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
-
+import Octicons from "react-native-vector-icons/Octicons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 
 // import Ionicons from "react-native-vector-icons/MaterialCommunityIcons";
 import HomeStackNav from "./HomeStackNav";
-import Recommendation from "../screen/Recommendation";
+import Promotion from "../screen/Promotion";
 import Order from "../screen/Order";
 import Profile from "../screen/Profile";
-
+// import
 // import GlobalSearchStackNav from "./GlobalSearchStackNav";
 // import AddNewPropStackScreens from "./AddNewPropStackScreens";
 // import ListingStackScreens from "./ListingStackScreens";
@@ -47,12 +47,12 @@ const BottomTabScreen = () => {
         }}
       />
       <Tab.Screen
-        name="Recommendation"
-        component={Recommendation}
+        name="Promotion"
+        component={Promotion}
         options={{
           tabBarLabel: "",
           tabBarIcon: ({ color }) => (
-            <FontAwesome5 name="grin-tongue" color={color} size={25} />
+            <Octicons name="megaphone" color={color} size={25} style={{ transform: [{ rotateZ: '-30deg' }] }}/>
           )
         }}
       />
