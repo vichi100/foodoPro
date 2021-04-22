@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import MainScreen from "./src/navigation/MainScreen";
 import { Provider } from "react-redux";
 import configureStore from "./Store";
-// yumzy, ety
+
 const store = configureStore();
 
 export default function App() {
@@ -23,6 +23,3 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   }
 });
-
-// fofa, fafo , wingify, etfy, eyff, starv, strv
-testy bites 

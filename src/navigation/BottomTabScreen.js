@@ -12,7 +12,8 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 
 // import Ionicons from "react-native-vector-icons/MaterialCommunityIcons";
 import HomeStackNav from "./HomeStackNav";
-import Promotion from "../screen/Promotion";
+import PromotionStackNav from "./PromotionStackNav";
+
 import Order from "../screen/Order";
 import Profile from "../screen/Profile";
 // import
@@ -47,12 +48,17 @@ const BottomTabScreen = () => {
         }}
       />
       <Tab.Screen
-        name="Promotion"
-        component={Promotion}
+        name="PromotionStackNav"
+        component={PromotionStackNav}
         options={{
           tabBarLabel: "",
           tabBarIcon: ({ color }) => (
-            <Octicons name="megaphone" color={color} size={25} style={{ transform: [{ rotateZ: '-30deg' }] }}/>
+            <Octicons
+              name="megaphone"
+              color={color}
+              size={25}
+              style={{ transform: [{ rotateZ: "-30deg" }] }}
+            />
           )
         }}
       />

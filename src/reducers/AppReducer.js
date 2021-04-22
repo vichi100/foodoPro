@@ -2,7 +2,8 @@ import { ACTION_TYPES } from "./ActionType";
 
 const initialState = {
   restaurantDetails: null,
-  userDetails: {}
+  userDetails: {},
+  promotionType: null
 };
 const AppReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -11,6 +12,13 @@ const AppReducer = (state = initialState, action) => {
       return {
         ...state,
         restaurantDetails: action.payload
+      };
+
+    case ACTION_TYPES.SET_PROMOTION_TYPE:
+      // // console.log("SET_PROMOTION_TYPE");
+      return {
+        ...state,
+        promotionType: action.payload
       };
 
     default:

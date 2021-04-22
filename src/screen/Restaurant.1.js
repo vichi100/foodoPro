@@ -28,23 +28,11 @@ import Button from "../components/Button";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { Input } from "react-native-elements";
 import Menu from "./Menu";
-import DateRangePicker from "./DateRangePicker";
 
 const Restaurant = props => {
-  const today = new Date();
-  const setDateRange = (start, end) => {
-    console.log(start, end);
-  };
   return (
     <SafeAreaView style={{ backgroundColor: "#ffffff" }}>
       <ScrollView>
-        <View>
-          {/* <DateRangePicker
-            initialRange={["2018-04-01", "2018-04-10"]}
-            onSuccess={(s, e) => setDateRange(s, e)}
-            // theme={{ markColor: "red", markTextColor: "white" }}
-          /> */}
-        </View>
         <View style={{ backgroundColor: "rgba(245,245,245, .5)" }}>
           <View style={{ margin: 15 }}>
             <View>
